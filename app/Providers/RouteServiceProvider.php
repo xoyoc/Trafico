@@ -28,6 +28,9 @@ class RouteServiceProvider extends ServiceProvider
 
         parent::boot($router);
         $router->model('facturas', 'App\Factura');
+        $router->model('bls', 'App\Bl');
+        $router->model('pedimentos', 'App\Pedimento');
+        $router->model('referencias', 'App\Referencia');
     }
 
     /**
